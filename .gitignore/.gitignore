@@ -1,0 +1,6 @@
+echo "# diplom-surface" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/maximilian82/diplom-surface.git
+git push -u origin master
