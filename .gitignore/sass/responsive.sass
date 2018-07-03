@@ -1,0 +1,177 @@
+@import "bourbon"
+@import "vars.sass"
+// @import "fontawesome/font-awesome"
+
+@mixin flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: space-between
+@mixin ul-reset		
+	margin: 0
+	padding: 0
+	list-style-type: none
+	height: 100%
+	li
+		float: left
+		height: 100%
+	a
+		text-decoration: none
+		display: block
+		height: 100%
+@media screen and (max-width: 1366px)
+	.first-screen .main-slogan_text, .last-screen .main-slogan_text
+		font-size: 80px
+	.second-screen .screen-img
+		left: 3%
+	.fourth-screen .content-block_content .block-title
+		font-size: 70px	
+	.fourth-screen .content-block_content
+		flex: 1	
+	.fourth-screen .content-block.flex-end .content-block_content
+		padding-left: 25px
+@media screen and (max-width: 1280px)
+	.first-screen
+		+bgj(football_1280, center,0)
+@media screen and (max-width: 1024px)
+	body
+		overflow-x: hidden!important
+	.wrapper
+		padding: 0 25px
+	.first-screen .main-slogan_text, .last-screen .main-slogan_text
+		font-size: 70px
+	.second-screen .screen-img
+		left: -26%
+	.third-screen .screen-img
+		right: 0
+	.fourth-screen .content-block_content .block-title
+		font-size: 40px
+		padding-bottom: 30px
+	.last-screen_heading-title
+		h2
+			font-size: 60px
+	.last-screen_heading-subtitle
+		font-size: 26px
+@media screen and (max-width: 768px)
+	.second-screen .content-wrapper_content, .third-screen .content-wrapper_content
+		max-width: 444px
+	.fourth-screen .img-wrapper
+		max-width: 100%
+	.fourth-screen .content-block_content .block-title
+		font-size: 80px	
+		padding-bottom: 35px
+		padding-top: 80px
+	.fourth-screen .content-block.flex-start .content-block_content
+		margin-left: 0		
+	.fourth-screen .content-block .content-block_content		
+		padding: 0 25px
+		padding-bottom: 100px
+	.fourth-screen .content-block.flex-end
+		flex-direction: column-reverse
+	.fourth-screen .block-number
+		+size(116px)
+		margin-left: 0
+		left: 33px
+		top: 53.5%
+	.last-screen
+		padding-top: 125px
+	.last-screen_heading-ico
+		margin-right: 0
+		margin-bottom: 75px
+	.last-screen_heading
+		flex-direction: column
+		text-align: center
+	.last-screen_heading-title h2
+		font-size: 80px
+	.last-screen_heading-subtitle
+		font-size: 34px
+	.last-screen .main-buttons_wrapper
+		margin-top: 0
+		margin-bottom: -150px
+@media screen and (max-width: 767px)
+	.first-screen .main-buttons_wrapper .store-btn, .last-screen .main-buttons_wrapper .store-btn
+		width: 100%
+		margin-bottom: 15px
+	.first-screen, .last-screen
+		height: auto
+		min-height: auto
+@media screen and (max-width: 667px)
+	.first-screen .main-logo, .last-screen .main-logo
+		padding-bottom: 110px
+	.first-screen .main-buttons_wrapper .store-btn, .last-screen .main-buttons_wrapper .store-btn
+		height: 35px
+	.first-screen .main-buttons_wrapper .store-btn_ico, .last-screen .main-buttons_wrapper .store-btn_ico
+		width: 31px
+	.first-screen .main-buttons_wrapper .store-btn_content, .last-screen .main-buttons_wrapper .store-btn_content
+		font-size: 8px
+		line-height: 13px
+	.first-screen .main-slogan_text, .last-screen .main-slogan_text, .last-screen_heading-title h2
+		font-size: 32px
+		line-height: 45px		
+	.last-screen_heading-subtitle
+		font-size: 14px
+	.picture-breakpoint
+		display: none
+	.mobile-picture
+		display: block
+		img
+			display: block
+			+cen
+	.second-screen .content-wrapper_content, .third-screen .content-wrapper_content
+		max-width: 100%
+	.second-screen, .third-screen
+		padding-top: 20px
+	.second-screen h2, .third-screen h2
+		font-size: 50px
+	.second-screen .title, .third-screen .title
+		font-size: 23px
+	.second-screen p, .third-screen p
+		font-size: 15px
+		letter-spacing: 1px
+	.second-screen .title:before, .third-screen .title:before
+		top: 1px
+	.second-screen .title:after, .third-screen .title:after
+		bottom: 2px	
+		height: 3px
+	.fourth-screen .content-block_content .block-title
+		font-size: 28px
+	.fourth-screen .content-block_content p
+		font-size: 16px
+	.last-screen_heading-ico
+		+size(72px 74px)
+		+border-radius(15px)
+		margin-bottom: 55px
+	.last-screen
+		padding-bottom: 0
+	.last-screen_heading-ico i
+		width: 80%
+	.last-screen_heading-title
+		padding-bottom: 70px
+	.last-screen .main-buttons_wrapper
+		margin-bottom: 70px
+	.first-screen .main-slogan
+		margin-bottom: 85px
+	.fourth-screen .block-number
+		+size(70px)
+		top: 60.5%
+	.fourth-screen .content-block.flex-end .content-block_content
+		margin-right: 0	
+@media screen and (max-width: 568px)
+	.fourth-screen .block-number		
+		top: 55.5%
+@media screen and (max-width: 480px)
+	.fourth-screen .block-number		
+		top: 50.5%
+@media screen and (max-width: 414px)
+	.fourth-screen .block-number		
+		top: 47.5%		
+@media screen and (max-width: 375px)
+	.fourth-screen .block-number		
+		top: 43.5%
+@media screen and (max-width: 320px)
+	.fourth-screen .block-number		
+		top: 37.5%		
